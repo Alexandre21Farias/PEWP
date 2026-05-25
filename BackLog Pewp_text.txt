@@ -1,0 +1,60 @@
+Sprint
+
+
+
+Tarefa | Responsável | Início | Término | Duração | Status | Dia do Lançamento | Objetivo | Sprint 1
+Levantamento de requisitos | Alexandre, Vamberto | 5 dias | 46115.0 | 46119.0 | Lançado | Definir o que o sistema deve fazer | 46122.0 | Pesquisa de dados de futebol
+Levantamento de requisitos | Thiago | Identificar dados para estatísticas | 46115.0 | 45754.0 | Lançado | Definir o que o sistema deve fazer | 46122.0 | Definir regras de probabilidade
+Levantamento de requisitos | Thiago, Isac | 4 dias | 45934.0 | 45754.0 | Base lógica do cálculo | Definir o que o sistema deve fazer | 46122.0 | Documentação inicial
+Levantamento de requisitos | Vinícius | 8 dias | 46115.0 | 45757.0 | Organizar documentação do projeto | Definir o que o sistema deve fazer | 46122.0 | Montar System Design
+Levantamento de requisitos | Cristian | 10 dias | 46123.0 | 46132.0 | Criar padrão visual do projeto | Definir o que o sistema deve fazer | 46122.0 | Sprint 2
+Arquitetura de Dados e API | Isac, Thiago | Atrasado | 46133.0 | 46142.0 | Criar padrão visual do projeto | Implementar tabelas no Banco de Dados. Criar API Node.js. | Desenvolvimento Inicial do Frontend
+Arquitetura de Dados e API | Alexandre, Cristian | Em Progresso | 46139.0 | 46143.0 | Base lógica do cálculo | Hospedar banco de dados e repositório | Desenvolvimento Inicial do Backend
+Arquitetura de Dados e API | Alexandre, Isac | Estruturação de Testes Unitários | 46139.0 | 46143.0 | Base lógica do cálculo | Hospedar banco de dados e repositório | Desenvolvimento Inicial do Backend
+Arquitetura de Dados e API | Vinicius | 2 dias | 46143.0 | 46144.0 | Planejado | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Sprint 3
+Motor de Probabilidade | Codificar algoritmo para gerar as % de vitória. | 4 dias | 46144.0 | 46147.0 | Base lógica do cálculo | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Telas de detalhes e Timeline
+Motor de Probabilidade | Implementar a visão detalhada do jogo: posse de bola, chutes e linha de tempo de eventos. | 10 dias | 46144.0 | 46147.0 | Base lógica do cálculo | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Painel Comparação
+Motor de Probabilidade | 3 dias | Identificar dados para estatísticas | 46148.0 | 46150.0 | Desenvolver a lógica que comparra duas seleções específicas antes do jogo começar | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Documentação Técnica de API
+Motor de Probabilidade | Alexandre | 7 dias | 46144.0 | 46150.0 | Documentar os endpoints e a lógica do algoritmo para a apresentação final. | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Sprint 4
+Refinamento de UIUX | Ajustes visuais, responsividade e polimento de transições. | 10 dias | 46151.0 | 46154.0 | Base lógica do cálculo | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Homologação
+Refinamento de UIUX | Testar o sistema com dados reais de copas passadas para garantir que o cálculo não falhe. | 2 dias | 46155.0 | 46159.0 | Lançado | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Stress Test
+Refinamento de UIUX | Preparação do Pitch de Vendas | 2 dias | 46155.0 | 46159.0 | Lançado | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Stress Test
+Refinamento de UIUX | Vamberto, Alexandre | Criar os slides e roteiro da demo focando no diferencial da nossa probabilidade. | 46160.0 | 46166.0 | Documentar os endpoints e a lógica do algoritmo para a apresentação final. | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Deploy Final
+Refinamento de UIUX | Isac, Cristian | 1 dia | 46167.0 | 46167.0 | Colocar o sistema no ar para ser acessado via link na apresentação. | Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela. | Essa planilha fornece dados para a lista suspensa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

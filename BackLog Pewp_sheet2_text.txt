@@ -1,0 +1,6 @@
+
+72
+Definir o plano de testes para validar se os dados do Banco de Dados batem com a tela.
+Hospedar banco de dados e repositório
+Implementar tabelas no Banco de Dados. Criar API Node.js.
+Definir o que o sistema deve fazer

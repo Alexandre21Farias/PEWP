@@ -1,0 +1,296 @@
+[RF01] Visualizar Listagem de Partidas (Home) 
+
+Atores: Usuários (Torcedores/Analistas) 
+
+Esse requisito começa quando o usuário acessa a página inicial e deseja visualizar as partidas da Copa do Mundo. O layout deve apresentar os campos da Tabela 1. 
+
+Tabela 1 – Campos para listagem de partidas 
+
+Nome do campo
+
+Descrição do campo
+
+Seleção Casa
+
+Nome/Bandeira da seleção mandante
+
+* Seleção Fora
+
+Nome/Bandeira da seleção visitante
+
+* Horário
+
+Hora prevista ou real da partida
+
+* Status
+
+Campo de escolha fechada: Futura, Em Andamento, Finalizada
+
+Placar
+
+Gols da Casa e Gols de Fora (atualizado em tempo real)
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[ X ] Essencial     [  ]Média[  ] Baixa
+
+[RF02] Visualizar Detalhes e Estatísticas da Partida 
+
+Atores: Usuários (Torcedores/Analistas) 
+
+Este requisito permite ao usuário aprofundar-se nos dados técnicos de um jogo específico selecionado na Home. 
+
+Tabela 2 – Campos de estatísticas e eventos 
+
+Nome do campo
+
+Descrição do campo
+
+* Posse de Bola 
+
+Porcentagem (%) para cada equipe 
+
+* Chutes 
+
+Total de finalizações e Chutes no Gol 
+
+Faltas / Escanteios 
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="160" w:before="0" w:line="259" w:lineRule="auto"/><w:ind w:left="0" w:right="0" w:firstLine="0"/><w:jc w:val="left"/><w:rPr/></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rtl w:val="0"/></w:rPr>Quantidade total por equipe 
+
+Cartões 
+
+Quantidade de Amarelos e Vermelhos 
+
+* Timeline 
+
+Lista de eventos (Gols, Cartões) com minuto e jogador 
+
+* Probabilidade
+
+% de Vitória (Casa/Empate/Fora) calculada pelo sistema 
+
+(*) campos de preenchimento obrigatório
+
+O sistema deve realizar requisições automáticas periódicas ao servidor para atualizar o placar e os eventos sem recarregar a página. 
+
+Prioridade
+
+[ X ] Essencial     [  ]Média[   ] Baixa
+
+[RF03] Consultar Informações da Seleção 
+
+Atores: Usuários (Torcedores/Analistas) 
+
+Ocorre quando o usuário deseja visualizar o histórico e a força técnica de uma seleção específica. 
+
+Tabela 3 –Campos de perfil da seleção 
+
+Nome do campo
+
+Descrição do campo
+
+ * Nome / Sigla 
+
+Identificação oficial da seleção 
+
+Técnico 
+
+Nome do treinador atual 
+
+Ranking FIFA 
+
+Posição oficial no ranking mundial 
+
+* Média de Gols 
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="160" w:before="0" w:line="259" w:lineRule="auto"/><w:ind w:left="0" w:right="0" w:firstLine="0"/><w:jc w:val="left"/><w:rPr/></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rtl w:val="0"/></w:rPr>Gols marcados e sofridos por partida 
+
+* Histórico 
+
+Lista de resultados recentes (Vitória, Empate ou Derrota) 
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[  ] Essencial     </w:r><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr>[ X ]Média[   ] Baixa
+
+[RF04] Simular Probabilidade de Vitória (Motor de Dados)  
+
+Atores: Sistema (Backend) / Analistas 
+
+Este requisito refere-se à lógica que alimenta o layout com as previsões de vitória. 
+
+Tabela 4 –Campos para cálculo de probabilidade
+
+Nome do campo
+
+Descrição do campo
+
+* ID_Partida 
+
+Referência ao jogo em questão 
+
+* Critério de Cálculo 
+
+Lógica baseada no histórico e desempenho recente 
+
+* Data do Cálculo 
+
+Timestamp de quando a probabilidade foi gerada 
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[ X ] Essencial     [  ]Média[   ] Baixa
+
+[RF05] Comparar Seleções (Painel de Comparação)
+
+Atores: Usuários
+
+Este requisito permite que o usuário selecione duas seleções específicas para comparar métricas antes de um jogo. 
+
+Tabela 5 – Campos para comparação de seleções 
+
+Nome do campo
+
+Descrição do campo
+
+ * Seleção A
+
+Seleção de escolha fechada (Origem da tabela de seleções)
+
+ * Seleção B
+
+Seleção de escolha fechada (Origem da tabela de seleções)
+
+Média de Gols 
+
+Comparativo de gols marcados e sofridos por partida de ambas seleções
+
+Ranking FIFA 
+
+Comparativo da posição oficial de ambas
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[  ] Essencial     </w:r><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr>[ X ]Média[   ] Baixa
+
+[RF06] Visualizar Elenco de Seleções
+
+Atores: Usuários
+
+Este requisito detalha os jogadores de cada seleção, conforme a modelagem de dados. 
+
+Tabela 6 – Campos para visualização de jogadores
+
+Nome do campo
+
+Descrição do campo
+
+ * Nome do Jogador
+
+Nome completo do jogador
+
+ * Posição
+
+Posição a qual o jogador atua
+
+ * Número da Camisa
+
+Numeração da camisa do jogador
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[  ] Essencial     [  ]Média</w:r><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr>[ X ] Baixa
+
+[RF07] Filtrar Partidas por Status
+
+Atores: Usuários
+
+Este requisito permite que o usuário organize a página inicial para ver apenas o que interessa no momento (jogos ao vivo, passados ou futuros).
+
+Tabela 7 – Opções de filtro
+
+Nome do campo
+
+Descrição do campo
+
+ * Status de Jogo
+
+Filtro de flag para escolha fechada (JOgos em andamento, finalizados ou futuros) 
+
+Data
+
+Seleção de filtro por período específico
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[  ] Essencial     </w:r><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr>[ X ]Média[   ] Baixa
+
+[RF08] Consultar Histórico de Confrontos
+
+Atores: Usuários
+
+Permite visualizar o desempenho passado entre duas seleções específicas para embasar a análise de probabilidade.
+
+Tabela 8 – Campos de histórico
+
+Nome do campo
+
+Descrição do campo
+
+ * Data da Partida
+
+Quando o confronto ocorreu
+
+ * Adversário
+
+Nome da seleção enfrentada
+
+ * Resultado Final
+
+o resultado definitivo da partida: Vitória, derrota ou empate
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[  ] Essencial     </w:r><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr>[ X ]Média[   ] Baixa
+
+[RF09] Atualização Dinâmica de Dados
+
+Atores: Sistema
+
+Requisito funcional de sistema fundamental para garantir que o usuário veja os gols e cartões sem atualizar a página.
+
+Tabela 9 – Parâmetros de atualização
+
+Nome do campo
+
+Descrição do campo
+
+Intervalo de Consulta
+
+Tempo definido para nova requisição
+
+Evento Novo
+
+Gatilho para disparar notificação visual no layout
+
+(*) campos de preenchimento obrigatório
+
+Prioridade
+
+[ X ] Essencial     [  ]Média[   ] Baixa
+

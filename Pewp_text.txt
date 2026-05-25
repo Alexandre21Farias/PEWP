@@ -1,0 +1,23 @@
+DICIONÁRIO DA EAP/CRONOGRAMA
+EM RISCO | Nome da tarefa | NOME DA SUBTAREFA | STATUS | ATRIBUÍDO A | DATA DE INÍCIO | DATA DE TÉRMINO | DURAÇÃO |  em dias
+COMENTÁRIOS/OBSERVAÇÕES | Não | Documentação | TAP | Concluído | 46084.0 | 46091.0 | 7 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Não | - | TAP | EAP | 46091.0 | 46091.0 | 2.0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Não | Alexandre Lima Farias | TAP | EAP | 46091.0 | 46091.0 | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Não | Cronograma | Levantamento de requistos | EAP | 45748.0 | 45748.0 | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Em andamento | Pesquisa e Ideação | Levantamento de requistos | Concluído | 45748.0 | 45748.0 | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Validar o cenário de dados e as expectativas do usuário final. | Definição do Público-Alvo | Levantamento de requistos | Mapear o perfil comportamental dos usuários interessados em estatísticas. | 45748.0 | 45749.0 | 1 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Thiago Souza Silva | Descrição do Projeto | Levantamento de requistos | Concluído | 45749.0 | 45749.0 | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Definir a proposta de valor e as funcionalidades centrais do sistema. | Análise de Dados Esportivos | Levantamento de requistos | Mapear o perfil comportamental dos usuários interessados em estatísticas. | 45750.0 | 45753.0 | 3 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Estudar os indicadores técnicos (chutes, posse de bola) para alimentar a lógica. | Design e Prototipação | Levantamento de requistos | EAP | 45750.0 | 45753.0 | 3 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Arquitetar a interface visual e a experiência de navegação. | Validação de UI/UX | Levantamento de requistos | EAP | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Realizar testes de usabilidade para otimizar o fluxo de navegação. | Documentação do Sistema | Levantamento de requistos | EAP | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Registrar as especificações técnicas de interface e padrões de design. | Desenvolvimento | Levantamento de requistos | Concluído | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Executar a construção técnica utilizando a stack React e Node.js. | Banco de Dados | Levantamento de requistos | Modelagem e implementação da persistência de dados de jogos e seleções. | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Isac Eich Brizolla | Back-end (Node.js) | Levantamento de requistos | Desenvolver a lógica de processamento, APIs e regras de negócio. | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Cristian Silva Araújo | Front-end (React) | Levantamento de requistos | EAP | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Implementar a interface dinâmica e integração com as APIs do servidor. | Sistema de Estatísticas e Eventos | Levantamento de requistos | Implementar a lógica de eventos das partidas (gols, cartões e lances). | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Cálculo de Probabilidade de Vitória | Desenvolver o algoritmo de estimativas baseado em dados históricos. | Levantamento de requistos | Implementar a lógica de eventos das partidas (gols, cartões e lances). | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Validação e Apresentação | Homologar a plataforma e realizar a entrega oficial do produto. | Levantamento de requistos | Concluído | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Entrega da Plataforma Funcional | Disponibilizar o MVP (Produto Mínimo Viável) totalmente operacional. | Levantamento de requistos | Desenvolver a lógica de processamento, APIs e regras de negócio. | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Ajustes Finais | Realizar o debugging e refinamentos técnicos pós-validação de usuário. | Levantamento de requistos | EAP | 0 | Vamberto Alvim Lobo Neto
+COMENTÁRIOS/OBSERVAÇÕES | Apresentação Final | Demonstrar os resultados finais e o funcionamento do sistema em 25/05/2026. | Levantamento de requistos | Concluído | 45802.0 | 45802.0 | 0 | Vamberto Alvim Lobo Neto
