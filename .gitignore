@@ -43,3 +43,9 @@ build/
 
 # extracted directories
 *_extracted/
+
+# agent & IDE metadata
+.agents/
+.mcp.json
+skills-lock.json
+
