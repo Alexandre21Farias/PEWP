@@ -482,7 +482,7 @@ export default function Home() {
                     boxShadow={isSelected ? '0 0 15px rgba(3,169,244,0.15)' : 'none'}
                   >
                     <Flex justify="space-between" align="center" mb={2}>
-                      <Text fontSize="10px" color="whiteAlpha.500" fontWeight="bold" display="flex" align="center" gap={1}>
+                      <Text fontSize="10px" color="whiteAlpha.500" fontWeight="bold" display="flex" alignItems="center" gap={1}>
                         <Clock size={10} />
                         {match.data} — {match.hora}
                       </Text>
@@ -528,10 +528,10 @@ export default function Home() {
                     </Flex>
 
                     {/* Team Names and flags */}
-                    <Grid templateColumns="1fr auto 1fr" gap={2} align="center" my={2}>
+                    <Grid templateColumns="1fr auto 1fr" gap={2} alignItems="center" my={2}>
                       <Flex align="center" gap={2}>
                         <Text fontSize="lg">{home.flag}</Text>
-                        <Text fontSize="xs" fontWeight="bold" isTruncated>{home.name}</Text>
+                        <Text fontSize="xs" fontWeight="bold" truncate>{home.name}</Text>
                       </Flex>
                       <Flex bg="#0b0e17" px={2} py={0.5} borderRadius="md" align="center">
                         <Text fontSize="sm" fontWeight="black" color={match.status === 'FUTURA' ? 'whiteAlpha.400' : 'white'}>
@@ -543,7 +543,7 @@ export default function Home() {
                         </Text>
                       </Flex>
                       <Flex align="center" gap={2} justify="flex-end">
-                        <Text fontSize="xs" fontWeight="bold" isTruncated>{away.name}</Text>
+                        <Text fontSize="xs" fontWeight="bold" truncate>{away.name}</Text>
                         <Text fontSize="lg">{away.flag}</Text>
                       </Flex>
                     </Grid>
@@ -587,7 +587,7 @@ export default function Home() {
 
           {/* Simulation Events Logs in Side Panel */}
           <Box mt="auto" borderTop="1px solid" borderColor="whiteAlpha.100" pt={4}>
-            <Heading size="xs" color="#8c7042" mb={2} display="flex" align="center" gap={1.5}>
+            <Heading size="xs" color="#8c7042" mb={2} display="flex" alignItems="center" gap={1.5}>
               <Activity size={12} />
               Acontecimentos Recentes
             </Heading>
@@ -598,7 +598,7 @@ export default function Home() {
                 notifications.map((n) => (
                   <Flex key={n.id} gap={2} mb={1.5} align="start">
                     <Text color="whiteAlpha.400" fontSize="9px" pt={0.5}>{n.time}</Text>
-                    <Text color="whiteAlpha.800" leading="tight">{n.text}</Text>
+                    <Text color="whiteAlpha.800" lineHeight="tight">{n.text}</Text>
                   </Flex>
                 ))
               )}
@@ -622,7 +622,7 @@ export default function Home() {
             </Flex>
 
             {/* Scoreboard teams and flags */}
-            <Grid templateColumns="1fr 120px 1fr" gap={4} align="center" py={4}>
+            <Grid templateColumns="1fr 120px 1fr" gap={4} alignItems="center" py={4}>
               <Flex direction="column" align="center" gap={2}>
                 <Text fontSize="5xl" filter="drop-shadow(0 0 10px rgba(255,255,255,0.15))">
                   {TEAMS[selectedMatch.homeTeamId].flag}
@@ -647,7 +647,7 @@ export default function Home() {
                 <Box mt={3}>
                   {selectedMatch.status === 'EM_ANDAMENTO' ? (
                     <Badge bg="red.950" color="red.400" border="1px solid" borderColor="red.800" borderRadius="full" px={3} py={1} fontSize="xs">
-                      <Spinner size="xs" color="red.500" mr={1.5} speed="0.8s" />
+                      <Spinner size="xs" color="red.500" mr={1.5} />
                       AO VIVO — {selectedMatch.minute}'
                     </Badge>
                   ) : selectedMatch.status === 'FINALIZADA' ? (
@@ -677,7 +677,7 @@ export default function Home() {
           {/* REAL TIME WIN PROBABILITY DISPLAY */}
           <Box bg="#0e1322" borderRadius="2xl" border="1px solid" borderColor="whiteAlpha.100" p={5}>
             <Flex justify="space-between" align="center" mb={2}>
-              <Heading size="xs" color="#8c7042" letterSpacing="wider" display="flex" align="center" gap={2}>
+              <Heading size="xs" color="#8c7042" letterSpacing="wider" display="flex" alignItems="center" gap={2}>
                 <TrendingUp size={16} />
                 PROBABILIDADE DE VITÓRIA (MOTOR DE DADOS)
               </Heading>
@@ -748,7 +748,7 @@ export default function Home() {
           <Grid templateColumns={{ base: '1fr', md: '1fr 1fr' }} gap={6}>
             {/* Match stats comparison */}
             <Box bg="#0e1322" borderRadius="2xl" border="1px solid" borderColor="whiteAlpha.100" p={5}>
-              <Heading size="xs" color="whiteAlpha.600" letterSpacing="wider" mb={4} display="flex" align="center" gap={2}>
+              <Heading size="xs" color="whiteAlpha.600" letterSpacing="wider" mb={4} display="flex" alignItems="center" gap={2}>
                 <Activity size={14} />
                 ESTATÍSTICAS DA PARTIDA
               </Heading>
@@ -869,7 +869,7 @@ export default function Home() {
 
             {/* Match Timeline */}
             <Box bg="#0e1322" borderRadius="2xl" border="1px solid" borderColor="whiteAlpha.100" p={5} display="flex" flexDirection="column">
-              <Heading size="xs" color="whiteAlpha.600" letterSpacing="wider" mb={4} display="flex" align="center" gap={2}>
+              <Heading size="xs" color="whiteAlpha.600" letterSpacing="wider" mb={4} display="flex" alignItems="center" gap={2}>
                 <Clock size={14} />
                 LINHA DO TEMPO DA PARTIDA
               </Heading>
@@ -915,7 +915,7 @@ export default function Home() {
         <Box display="flex" flexDirection="column" gap={6}>
           {/* SELEÇÃO PROFILE (Consultar Seleção - RF03) */}
           <Box bg="#0e1322" borderRadius="2xl" border="1px solid" borderColor="whiteAlpha.100" p={5}>
-            <Heading size="xs" color="#8c7042" letterSpacing="wider" mb={4} display="flex" align="center" gap={2}>
+            <Heading size="xs" color="#8c7042" letterSpacing="wider" mb={4} display="flex" alignItems="center" gap={2}>
               <Award size={16} />
               PERFIL DA SELEÇÃO
             </Heading>
@@ -1013,7 +1013,7 @@ export default function Home() {
 
           {/* TEAM COMPARISON PANEL (Comparar Seleções - RF05) */}
           <Box bg="#0e1322" borderRadius="2xl" border="1px solid" borderColor="whiteAlpha.100" p={5}>
-            <Heading size="xs" color="#8c7042" letterSpacing="wider" mb={4} display="flex" align="center" gap={2}>
+            <Heading size="xs" color="#8c7042" letterSpacing="wider" mb={4} display="flex" alignItems="center" gap={2}>
               <Users size={16} />
               PAINEL DE COMPARAÇÃO
             </Heading>
