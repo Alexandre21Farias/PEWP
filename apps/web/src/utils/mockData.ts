@@ -67,7 +67,7 @@ export const TEAMS: Record<string, Team> = {
     id: 'BRA',
     name: 'Brasil',
     sigla: 'BRA',
-    coach: 'Dorival Júnior',
+    coach: 'Carlo Ancelotti',
     ranking: 5,
     flag: '🇧🇷',
     avgGoalsScored: 2.1,
