@@ -55,6 +55,11 @@ export default function Home() {
   // Log of simulation highlights/notifications
   const [notifications, setNotifications] = useState<{ id: string; text: string; time: string }[]>([])
 
+  const addNotification = (text: string) => {
+    const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+    setNotifications((prev) => [{ id: Date.now().toString(), text, time }, ...prev.slice(0, 19)])
+  }
+
   const selectedMatch = matches.find((m) => m.id === selectedMatchId) || matches[0]
 
   // Recalculate probabilities based on ranking, score, time, cards, etc.
@@ -296,10 +301,7 @@ export default function Home() {
     return () => clearInterval(interval)
   }, [isSimulating, simSpeed])
 
-  const addNotification = (text: string) => {
-    const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
-    setNotifications((prev) => [{ id: Date.now().toString(), text, time }, ...prev.slice(0, 19)])
-  }
+
 
   // Reset matches to initial state
   const resetSimulation = () => {
@@ -517,7 +519,7 @@ export default function Home() {
                         {match.status === 'EM_ANDAMENTO' ? (
                           <Flex align="center" gap={1}>
                             <Box w={1.5} h={1.5} borderRadius="full" bg="red.500" className="live-pulse" />
-                            {match.minute}'
+                            {match.minute}&apos;
                           </Flex>
                         ) : match.status === 'FINALIZADA' ? (
                           'FIM'
@@ -648,7 +650,7 @@ export default function Home() {
                   {selectedMatch.status === 'EM_ANDAMENTO' ? (
                     <Badge bg="red.950" color="red.400" border="1px solid" borderColor="red.800" borderRadius="full" px={3} py={1} fontSize="xs">
                       <Spinner size="xs" color="red.500" mr={1.5} />
-                      AO VIVO — {selectedMatch.minute}'
+                      AO VIVO — {selectedMatch.minute}&apos;
                     </Badge>
                   ) : selectedMatch.status === 'FINALIZADA' ? (
                     <Badge bg="whiteAlpha.100" color="whiteAlpha.600" border="1px solid" borderColor="whiteAlpha.200" borderRadius="full" px={3} py={1} fontSize="xs">
@@ -886,7 +888,7 @@ export default function Home() {
                     return (
                       <Flex key={ev.id} align="start" gap={3} position="relative" pb={2}>
                         <Badge bg="#151a2e" color="whiteAlpha.800" border="1px solid" borderColor="whiteAlpha.100" borderRadius="md" fontSize="9px" px={1.5} py={0.5} mt={0.5} minW="32px" textAlign="center">
-                          {ev.minute}'
+                          {ev.minute}&apos;
                         </Badge>
                         <Box>
                           <Flex align="center" gap={1.5} mb={0.5}>

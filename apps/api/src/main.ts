@@ -23,7 +23,9 @@ async function bootstrap() {
   // Swagger
   const config = new DocumentBuilder()
     .setTitle('PWEP API')
-    .setDescription('Plataforma Web de Estatísticas e Probabilidade da Copa do Mundo')
+    .setDescription(
+      'Plataforma Web de Estatísticas e Probabilidade da Copa do Mundo',
+    )
     .setVersion('1.0.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
