@@ -57,7 +57,7 @@ export default function Home() {
 
   const addNotification = (text: string) => {
     const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
-    setNotifications((prev) => [{ id: Date.now().toString(), text, time }, ...prev.slice(0, 19)])
+    setNotifications((prev) => [{ id: `${Date.now()}-${Math.random()}`, text, time }, ...prev.slice(0, 19)])
   }
 
   const selectedMatch = matches.find((m) => m.id === selectedMatchId) || matches[0]
